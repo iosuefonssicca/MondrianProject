@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .containerGrid{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; 
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr  1fr 1fr;
+      height: 748px;
+      width:748px;
+    }
+
+    .redSquare{
+      grid-area: 1 / 1 / 7 /6;
+      border-bottom: 5px solid black;
+      border-right: 5px solid black;
+      background-color:#E72F24 ;
+    }
+
+    .graySquareRight{
+      grid-area: 1 / 6 / 7/ 13;
+      background-color:#F0F1EC;
+      border-bottom: 5px solid black;
+    }
+
+    .graySquareMiddleLeft{
+      grid-area: 7 / 1 / 11/ 6;
+      background-color:#F0F1EC;
+      border-bottom: 5px solid black;
+      border-right: 5px solid black;
+    }
+
+    .graySquareMiddleMiddle{
+      grid-area:7/ 6/ 11/ 12;
+      background-color:#F0F1EC;
+      border-right: 5px solid black;
+      border-bottom: 5px solid black;
+    }
+
+    .graySquareLeftBottom{
+      grid-area: 11 / 1 / 13 / 6;
+      background-color:#F0F1EC;
+      border-right: 5px solid black;
+    }
+
+    .yellowSquare{
+      grid-area:11/6/13/10;
+      background-color:#F9D01E;
+      border-right: 5px solid black;
+    }
+
+    .blackSquare{
+      grid-area:11/10/13/12;
+      background-color:#232629;
+      border-right: 5px solid black;
+    }
+
+    .blueSquare{
+      grid-area: 7 / 12/ 9 / 12;
+      background-color:#004592;
+      border-bottom: 10px solid black;
+    }
+
+    .graySquareRightBottom{
+      grid-area:9/ 12/ 12/ 12 ;
+      background-color:#F0F1EC ;
+
+    }
+
+    .containerFlex{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="containerFlex">
+    <div class="containerGrid">
+          <div class="redSquare" ></div>
+          <div class="graySquareRight"></div>
+          <div class="graySquareMiddleLeft"></div>
+          <div class="graySquareMiddleMiddle"></div>
+          <div class="graySquareLeftBottom"></div>
+          <div class="yellowSquare"> </div>
+          <div class="blackSquare"></div>
+          <div class="blueSquare"></div>
+          <div class="graySquareRightBottom"></div>
+    </div>
+</div>
+</body>
+
+</html>
